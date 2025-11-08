@@ -17,8 +17,6 @@ document.querySelectorAll(
   observer.observe(el);
 });
 
-
-// ================== ANIMAÇÃO DO LOGO ==================
 const logo = document.querySelector('.logo img');
 if (logo) {
   logo.style.transition = 'transform 1s ease';
