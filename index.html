@@ -23,16 +23,24 @@
 <body>
     <!-- Navbar -->
     <header class="navbar">
-        <div class="logo"><img class="logo" src="./img/logo.png" alt=""></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio"><i class="fi fi-rr-house-chimney"></i>Inicio</a></li>
-                <li><a href="#sobre"><i class="fi fi-br-info"></i>Sobre</a></li>
-                <li><a href="#funcionalidades"><i class="fi fi-rr-briefcase"></i>Funcionalidades</a></li>
-                <li><a href="#equipe"><i class="fi fi-rr-team-check"></i>Nossa Equipe</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="logo">
+    <img src="./img/logo.png" alt="Logo NextStep">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fi fi-br-menu-burger"></i>
+  </div>
+
+  <nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#inicio"><i class="fi fi-rr-house-chimney"></i> Início</a></li>
+      <li><a href="#sobre"><i class="fi fi-br-info"></i> Sobre</a></li>
+      <li><a href="#funcionalidades"><i class="fi fi-rr-briefcase"></i> Funcionalidades</a></li>
+      <li><a href="#equipe"><i class="fi fi-rr-team-check"></i> Nossa Equipe</a></li>
+    </ul>
+  </nav>
+</header>
+
 
     <!-- Hero -->
     <section class="hero-section" id="inicio">
@@ -264,6 +272,15 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
+
 </body>
 
 </html>
